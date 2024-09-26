@@ -7,4 +7,10 @@ frm.addEventListener("submit",(e)=>{
     const nome = frm.inNome.value; //obtem o nome digitado no form
     resp.innerText = `Olá ${nome}`; //exibe a resposta no programa 
     e.preventDefault();//vai evitar que o form envie od dados pro destino.php
-})
+});
+
+function executar(evento){
+    const nome = frm.inNome.value;//obtem o nome digitado no form
+    resp,innerHTML = `Olá <i> ${nome}</i>`; //exibe a resposta do programa
+    evento.preventDefault();
+}
